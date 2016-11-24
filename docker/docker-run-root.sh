@@ -18,5 +18,10 @@ if [ ! -f $USER_DIR/pyicqt.conf.xml ]; then
 	chown -R "$RUN_USER:$RUN_USER" "$USER_DIR/pyicqt.conf.xml"
 fi
 
-exec su -l -c "exec /usr/bin/python /usr/share/pyicqt/PyICQt.py --config=$USER_DIR/pyicqt.conf.xml -o spooldir=$USER_DIR -d " $RUN_USER
+if [ ! -d $USER_DIR/data ]; then
+	mkdir $USER_DIR/data
+	chown -R "$RUN_USER:$RUN_USER" "$USER_DIR/data"
+fi
+
+exec su -s /bin/sh -c "exec /usr/bin/python /usr/share/pyicqt/PyICQt.py --config=$USER_DIR/pyicqt.conf.xml -o spooldir=$USER_DIR/data -d " $RUN_USER
 
