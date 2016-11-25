@@ -13,5 +13,5 @@ VOLUME /home/pyicqt
 
 # Container will run some preparations with root access (fixing permissions, for example)
 #   and then execute /bin/docker-run with user access to configure (if needed) and run
-#		Ejabberd
+#		PyICQ-t
 CMD ["/bin/docker-run-root"]
