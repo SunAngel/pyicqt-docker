@@ -1,11 +1,11 @@
 # PyICQ-t Docker image
 [PyICQ-t](https://github.com/shizeeg/pyicqt) XMPP to ICQ transport Docker image based on [Debian Linux](https://hub.docker.com/_/debian/).
 
-Also in my [Github repository](https://github.com/SunAngel/pyicqt-docker) you can find some usefull scripts for helping running containers.
+Also in my [Github repository](https://github.com/VGoshev/pyicqt-docker) you can find some usefull scripts for helping running containers.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`](https://github.com/SunAngel/pyicqt-docker/blob/master/docker/Dockerfile) - PyICQ-t from debian stable repository
+* [`latest`](https://github.com/VGoshev/pyicqt-docker/blob/master/docker/Dockerfile) - PyICQ-t from debian stable repository
 
 ## Quickstart
 
@@ -26,6 +26,6 @@ I would recommend you use host directory mapping of named volume to run containe
 
 ## License
 
-This Dockerfile and scripts are released under [MIT License](https://github.com/SunAngel/pyicqt-docker/blob/master/LICENSE).
+This Dockerfile and scripts are released under [MIT License](https://github.com/VGoshev/pyicqt-docker/blob/master/LICENSE).
 
 [PyICQ-t](https://github.com/shizeeg/pyicqt/blob/master/COPYING) has its own license.
